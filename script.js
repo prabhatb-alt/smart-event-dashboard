@@ -6,7 +6,6 @@ form.addEventListener('submit', function(event){
     const date = eventDate.value
     const cat = category.value
     const desc = description.value
-
     const card = document.createElement('div')
     card.classList.add('card')
     card.innerHTML = `
@@ -32,20 +31,17 @@ eventCards.addEventListener('click', function(e) {
     }
 })
 
-
-const clearBtn = document.querySelector('.events button:first-child')
+const clearBtn = document.getElementById('clearBtn')
 clearBtn.addEventListener('click', function() {
     eventCards.innerHTML = ""
 })
 
-const sampleBtn = document.querySelector('.events button:nth-child(2)')
+const sampleBtn = document.getElementById('sampleBtn')
 sampleBtn.addEventListener('click', function() {
-
     const samples = [
         {title: "Documentation", date: "2025-08-23", cat: "Meetup", desc: "KRMU Documentation Day"},
         {title: "Birthday", date: "2025-10-11", cat: "Social", desc: "18th Birthday"}
     ]
-
     samples.forEach(sample => {
         const card = document.createElement('div')
         card.classList.add('card')
