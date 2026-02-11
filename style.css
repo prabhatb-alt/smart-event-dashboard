@@ -1,21 +1,145 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial,sans-serif;
+}
+
+body{
+    background: linear-gradient(to top, #9be15d 0%, #00e3ae 100%);
+    padding: 40px;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.main{
+    display: flex;
+    gap: 30px;
+}
+
+.eventForm{
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.eventForm label{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+.eventForm input,
+.eventForm select,
+.eventForm textarea{
+    width: 100%;
+    padding: 6px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+.eventForm button{
+    margin-top: 15px;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 6px;
+    background: #008cff;
+    color: white;
+    cursor: pointer;
+}
+
+.events{
+    flex: 2;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.events button{
+    padding: 6px 10px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 6px;
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+}
+
+.cards{
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
 .card{
-    background-color: greenyellow;
-    width: 150px;
+    background: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+    width: 170px;
+    padding: 15px;
+    border-radius: 10px;
     position: relative;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.card h2{
+    font-size: 18px;
+}
+.card p{
+    font-size: 13px;
+    margin-top: 5px;
+}
+.card button{
+    margin-top: 5px;
+    padding: 3px 8px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(0,0,0,0.1);
 }
 
 .deleteCard{
     position: absolute;
-    top: 5px;
-    right: 5px;
-    background-color: red;
+    top: 8px;
+    right: 8px;
+    background: red;
     color: white;
     width: 20px;
     height: 20px;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     font-size: 12px;
     cursor: pointer;
+}
+
+.dom{
+    margin-top: 30px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.dom button{
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 6px;
+    background: #6a11cb;
+    color: white;
+    cursor: pointer;
+}
+
+
+.key{
+    font-weight: bold;
+    color: #6a11cb;
 }
